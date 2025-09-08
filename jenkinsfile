@@ -5,7 +5,7 @@ pipeline {
     stages {
           stage('Clone') {
             steps {
-                bat 'javac Helloworld.java'
+             'git branch: 'main', credentialsId: '1368bde6-81c4-4c04-a24b-b74f0cc7b344', url: 'https://github.com/projext1/batch-b3.git''
             }
         }
         stage('Compile') {
