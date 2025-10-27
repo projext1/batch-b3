@@ -1,17 +1,5 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Compile') {
-            steps {
-                bat 'javac Helloworld.java'
-            }
-        }
-
-        stage('Run') {
-            steps {
-                bat 'java Helloworld'
-            }
-        }
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
     }
 }
